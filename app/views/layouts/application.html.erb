@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SampleApp</title>
+  <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+  <!-- links stylesheets-->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <!-- links javascript-->
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <!-- prevents cross-site request forgery  -->
   <%= csrf_meta_tags %>
 </head>
 <body>
